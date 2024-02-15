@@ -10,7 +10,7 @@ const Links = () => {
      * pre fetch를 하려면 이처럼 개발자가 직접 작성해야하기에 Link 태그를 쓰는 것이 권장됨.
      */
     useEffect(() => {
-        router.prefetch('/section')
+        router.prefetch('/section1')
     }, [router])
 
   return (
