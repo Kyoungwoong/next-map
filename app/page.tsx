@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import {Fragment} from 'react'
-import Header from './section2/component/Header';
+import HomeHeader from './section2/component/HomeHeader';
 import MapSection from './section3/component/MapSection'
 import {Store, Coordinates} from "./types/store";
 import Mock from "./section3/component/Mock";
@@ -19,8 +19,9 @@ export default async function Home() {
       <Fragment>
         
         <Mock stores={stores} />
+        <HomeHeader/>
 
-        <Header/>
+        {/* <Header/> */}
 
         <main style={{width:'80%', height: '100%', margin: '20vh 0 0 8vw' }}>
 

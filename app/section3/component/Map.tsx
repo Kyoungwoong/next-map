@@ -32,7 +32,7 @@ const Map = ({
     const mapOptions = {
         center: new window.naver.maps.LatLng(...initialCenter),
         zoom: initialZoom,
-        minZoom: 9,
+        minZoom: 6,
         scaleControl: false,
         mapDataControl: false,
         logoControlOptions: {
