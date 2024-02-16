@@ -20,7 +20,7 @@ const Feedback = () => {
           >
               <AiOutlineShareAlt size={20}/>
           </button>,
-          <Link href="/" className={styles.box} key="link"><VscFeedback size={20}/></Link>
+          <Link href="/" className={styles.box} key="link">링크<VscFeedback size={20}/></Link>
       ]}>
         
       </Header>

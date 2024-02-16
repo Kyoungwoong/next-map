@@ -7,12 +7,16 @@ import type {Store, Coordinates} from "../../types/store";
 import useMap from "../../hooks/useMap";
 import useStores from "../../hooks/useStores";
 import Markers from "./Markers";
+import useCurrentStore from "../../hooks/useCurrentState";
 
 const MapSection = () => {
+
+  const {clearCurrentStore} = useCurrentStore();
   
   const {initializeMap} = useMap();
   const onLoadMap = (map: NaverMap) => {
     initializeMap(map);
+    naver.maps.Event.addListener(map, 'click', clearCurrentStore);
   };
 
   return (
